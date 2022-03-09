@@ -10,6 +10,10 @@ public class Main {
         tv.setHasWarranty(true);
         tv.generateSerialNumber();
         System.out.println(tv.getSerialNumber());
+        Ring ringOne=new Ring(99.99,"Engagement Ring", "Ring", "gold",4.2, 6);
+        ringOne.generateSerialNumber();
+        tv.printDetails();
+        ringOne.printDetails();
     }
 
 }

@@ -3,13 +3,13 @@ package com.company;
 import java.time.LocalDate;
 
 public class ElectronicDevices extends Item {
-    String type;
-    String manufacturer;
-    int age;
-    boolean hasWarranty; // indicates if electronic device warranty is still active
+    private String type;
+    private String manufacturer;
+    private int age;
+    private boolean hasWarranty; // indicates if electronic device warranty is still active
 
-
-    public ElectronicDevices(String description,double cost, String type, String manufacturer, int age, boolean hasWarranty) {
+    //TODO refactor type variable, move to Item Class.
+    public ElectronicDevices(String description, double cost, String type, String manufacturer, int age, boolean hasWarranty) {
         super(cost, description);
         this.type = type;
         this.manufacturer = manufacturer;
@@ -52,10 +52,11 @@ public class ElectronicDevices extends Item {
     public void setHasWarranty(boolean hasWarranty) {
         this.hasWarranty = hasWarranty;
     }
+
     @Override
     public void printDetails() {
         super.printDetails();
-        System.out.println("Type: " +type+ "\n Manufacturer: "+ manufacturer+"\n Age: "
-        + age+ "Active Warranty: "+hasWarranty);
+        System.out.println("Type: " + type + "\n Manufacturer: " + manufacturer + "\n Age: "
+                + age + "Active Warranty: " + hasWarranty);
     }
 }
