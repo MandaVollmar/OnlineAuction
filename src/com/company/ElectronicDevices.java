@@ -56,7 +56,7 @@ public class ElectronicDevices extends Item {
     @Override
     public void printDetails() {
         super.printDetails();
-        System.out.println("Type: " + type + "\n Manufacturer: " + manufacturer + "\n Age: "
-                + age + "Active Warranty: " + hasWarranty);
+        System.out.println("Type: " + type + "\nManufacturer: " + manufacturer + "\nAge: "
+                + age + "\nActive Warranty: " + hasWarranty);
     }
 }

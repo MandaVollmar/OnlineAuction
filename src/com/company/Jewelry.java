@@ -44,7 +44,7 @@ public class Jewelry extends Item {
     @Override
     public void printDetails() {
         super.printDetails();
-        System.out.println("Type: " + type + "\n Material: " + material + "\nWeight: " + weight);
+        System.out.println("Type: " + type + "\nMaterial: " + material + "\nWeight: " + weight);
 
     }
 }
